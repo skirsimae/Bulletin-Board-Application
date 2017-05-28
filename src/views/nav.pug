@@ -1,0 +1,10 @@
+mixin navLink(link, name) 
+	li
+		a(
+			href=link
+		) #{name}
+
+ul
+	+navLink('/', "Create a message")
+	+navLink('/all_messages', "Messages")
+
