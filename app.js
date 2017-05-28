@@ -32,6 +32,24 @@ app.post('/', function(req,res) {
 		});
 	});
 
+app.get('/all_messages', function(req,res) {
+	pg.connect(connectionString, function(err, client, done) {
+		if(err){ //handle connection errors. 
+			throw err;
+		}
+			done();
+
+		client.query('SELECT * FROM messages', function (err, result) {
+			var messages = result.rows;
+
+			res.render('all_messages', {
+				messages: messages
+			});
+			pg.end();
+		});
+	});
+});
+
 var listener = app.listen(3000, function () {
 	console.log('Server has started at: ' + listener.address().port);
 });
