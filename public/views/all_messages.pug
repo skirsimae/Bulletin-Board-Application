@@ -1,0 +1,13 @@
+include nav
+doctype html
+html
+	head
+		style
+			include ../css/style.css
+	body
+		br
+		h2 All messages:
+		each message in messages
+			br
+			p Title: #{message.title} 
+			p Message: #{message.body}

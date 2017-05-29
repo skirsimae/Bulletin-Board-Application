@@ -1,0 +1,24 @@
+include nav
+html
+	head
+		style
+			include ../css/style.css
+		title="Add a message"
+	body
+		br
+		h3 Hi there! Please leave your message.
+		br
+		form(action='/' method='post' autocomplete='off')
+			div
+				label(for="name") Title:
+				br
+				input(type='text' name='title' placeholder='Here goes your title...')
+			br
+			div
+				label(for="name") Message:
+				br
+				textarea(type='textarea' name='body' placeholder='Here goes your message...')
+			br
+			button(type='submit') Add your message!
+
+
