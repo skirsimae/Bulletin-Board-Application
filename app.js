@@ -6,7 +6,7 @@ const pg = require('pg'); //include node postgres library.
 
 app.use(bodyParser.urlencoded({
     extended: false
-}))
+}));
 app.use(express.static('public'));
 
 app.set('views', './public/views');
@@ -28,7 +28,7 @@ app.post('/', function(req,res) {
 		client.query('INSERT INTO messages(title, body) values($1,$2)', [req.body.title, req.body.body]); //SQL Query --> insert data.
 		done();
 
-			res.redirect('all_messages')
+		res.redirect('all_messages') 
 	});
 });
 
@@ -37,7 +37,7 @@ app.get('/all_messages', function(req,res) {
 		if(err){ //handle connection errors. 
 			throw err;
 		}
-			done();
+		done(); 
 
 		client.query('SELECT * FROM messages', function (err, result) {
 			var messages = result.rows;
