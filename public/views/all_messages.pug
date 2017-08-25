@@ -1,13 +1,19 @@
-include nav
 doctype html
 html
 	head
 		style
 			include ../css/style.css
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet")
+		title="All messages"
 	body
+		nav
+			a(class="active" href="/all_messages") All messages
+			a(href="/") Create a message
 		br
-		h2 All messages:
-		each message in messages
-			br
-			p Title: #{message.title} 
-			p Message: #{message.body}
+		header
+			h3 All messages
+		section 
+			each message in messages
+				p <span style="font-size: 18px; font-weight: bold"> Title:</span> <span style="font-size: 15px"> #{message.title}
+				p <span style="font-size: 18px; font-weight: bold"> Message:</span> <span style="font-size: 15px"> #{message.body}
+				br

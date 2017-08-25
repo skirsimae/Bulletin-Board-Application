@@ -1,89 +1,93 @@
 body {
-background-color:black;
-background-image:
-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px
+	color: #faebd7;
+	font-family: 'Open Sans', Helvetica, sans-serif; 
+	letter-spacing: 2px;
 }
 
+nav a {
+ 	text-decoration: none;
+ 	color: #faebd7;
+ 	font-size: 15px;
+ 	display: inline-block;
+ 	margin-left: 30px;
+ 	margin-top: 40px;
+ 	border: 1px solid #faebd7;
+ 	border-radius: 4px;
+ 	padding: 7px;
+}
+
+nav a:hover {
+	color: #694cbf;
+}
+
+.active {
+	color: #694cbf;
+}
 
 form, h3 {
 	text-align: center;
 }
 
-
-h3, label, p, h2{
-	color: white;
-	font-family: Arial, Helvetica, sans-serif; 
+h3, label, p {
+	color: #faebd7;
 }
-
-
-a {
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-}
-
-
-a:hover {
-	color: #e06377;
-}
-
-
-h2 {
-	text-align: left;
-}
-
 
 h3 {
 	font-size: 20px;
-	color: white;
+	font-weight: bold
 }
-
 
 label {
 	font-size: 17px;
 	float: left;
 	width: 45em;
 	text-align: left;
-	margin-left: 340px;
+	margin-left: 380px;
 }
-
 
 input, textarea {
 	width: 50%;
 	padding: 12px 20px;
 	box-sizing: border-box;
+	font-family: 'Open Sans', Helvetica, sans-serif; 
 	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
-	border: 1px solid #ccc;
+	border: 1px solid #faebd7;;
 	display: inline-block;
 	margin: 8px 0;
+	border-radius: 4px;
 }
-
 
 textarea {
 	height: 150px;   
-    border-radius: 4px;
-    resize: none;    
+	resize: none;    
 }
-
 
 button {
 	width: 30%;
 	padding: 12px 20px;
 	margin: 8px 0;
-	border: 1px solid #ccc;
+	border: 1px solid;
+	background-color: #694cbf;
 	border-radius: 4px;
-	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-
 button:hover {
-	border: 2px #e06377;
-	color: #e06377;
+	cursor: pointer;
+}
+
+section {
+	margin: 0px 200px 0px 200px;
+	padding: 10px 50px 10px 50px;
+	border: 1px solid #faebd7;
 }

@@ -50,6 +50,6 @@ app.get('/all_messages', function(req,res) {
 	});
 });
 
-var listener = app.listen(3000, function () {
+var listener = app.listen(3030, function () {
 	console.log('Server has started at: ' + listener.address().port);
 });
