@@ -22,5 +22,6 @@ As before, your package.json must include the correct dependencies.
 Additionally, you must configure postgres as follows: Name your database "bulletinboard". Your postgres username must be read from an environment variable named "POSTGRES_USER". Your postgres password (if present) must be read from an environment variable named "POSTGRES_PASSWORD"
 
 Result:
-![all_messages](https://user-images.githubusercontent.com/27499173/29709006-11ca4ebe-898b-11e7-82d4-0d9a9d393e09.PNG)
-![create_message](https://user-images.githubusercontent.com/27499173/29709007-13a6f8c2-898b-11e7-8ee4-0203b88ebf79.PNG)
+![all_messages](https://user-images.githubusercontent.com/27499173/29709264-f9b7d8b8-898b-11e7-989f-511ce076fd0d.PNG)
+![create_message](https://user-images.githubusercontent.com/27499173/29709267-fb2f7ba6-898b-11e7-93b2-9c3999582f04.PNG)
+
